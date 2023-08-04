@@ -1,0 +1,23 @@
+@media(max-width: 900px){
+    body {
+        --Mobile-Nav-Height:100px;
+        --Mobile-Header-Logo-Width: 27.1794872vw!important;
+        --Mobile-Hamburger-Size: 1.25rem;
+        --Mobile-Nav-Links-Touch-Padding:2rem;
+        --Mobile-Nav-Links-Spacing:0px;
+        --Mobile-Nav-Links-Underline-Width: 69%;
+        --Mobile-Nav-Transition-Speed:0.4s;
+        --Mobile-Nav-Transition-Speed-Fast:0.3s;
+
+        --Mobile-Container-Width:76%;
+        --Tablet-Header-Height: var(--Mobile-Container-Width);
+        --Mobile-Header-Height: 100%;
+        --Mobile-Header-Border-Radius:0px; /* was 20px */
+        --Mobile-Header-Inner-Margins:2.5rem;
+
+        --Mobile-Features-Front-Image-Height:20vw;
+
+        --Mobile-Team-Grid-Spacing-X:3rem;
+        --Mobile-Team-Grid-Spacing-Y:3rem;
+    }
+}

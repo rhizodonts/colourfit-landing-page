@@ -1,0 +1,88 @@
+body {
+    /*----- HEADINGS -----*/
+    --Heading-Size-S: 0.75rem;
+    --Heading-Size-M: 1.25rem;
+    --Heading-Size-L: 1.375rem;
+    --Heading-Size-XL: 2rem;
+    --Heading-Size-XXL: 2.5rem;
+    --Heading-Letter-Spacing:0px;
+
+    /*----- BODY TEXT -----*/
+    font-family: bodyFont;
+    --Body-Text-S: 0.75rem;
+    --Body-Text-M: 0.875rem;
+    --Body-Text-L: 1rem;
+    --Body-Text-Letter-Spacing-S:0.03em;
+    --Body-Text-Letter-Spacing-M:0.06em;
+
+    /*----- LINE HEIGHT -----*/
+    --Line-Height-XS: 1;
+    --Line-Height-S: 1.2;
+    --Line-Height-M: 1.5;
+    --Line-Height-L: 1.8;
+
+    /*----- COLORS -----*/
+    --Text-Color-1:#000;
+    --Text-Color-2:#313131;
+
+    --Accent-1:#411e94; /* dark purple */
+    --Accent-1-RGB:65,30,148;
+    --Accent-2: white;
+    --Accent-2-RGB:255,255,255;
+
+    /*----- GLOBAL SETTINGS -----*/
+    --Rainbow-Borders-Width: 3px;
+    --Rainbow-Borders-Width-XL: 10px;
+
+    /*----- LAYOUT SETTINGS -----*/
+    --Screen-Margin-Y: 8vh;
+    --Screen-Margin-X: 9vw;
+
+    --Container-Width: 66.4vw;
+
+    /*----- TOP BAR -----*/
+    --Nav-Logo-Width: 160px;
+
+    --Nav-Links-Touch-Padding: 10px;
+    --Nav-Links-Spacing: 3.5rem;
+
+    /*----- HEADER -----*/
+    --Header-Height: calc(var(--Container-Width) * 0.6);
+    --Header-Border-Radius:50px;
+    --Header-Inner-Margins: 48px;
+    --Header-Text-Row-Spacing: 2rem;
+
+    /*----- SECTION: GAPS -----*/
+    --Sections-Divider-Width:83vw;
+    --Sections-Spacing-Y:5rem;
+
+    /*----- SECTION: FEATURES -----*/
+    --Features-Grid-Top-Gap:2rem;
+    --Features-Grid-Width:75vw;
+    --Features-Spacing:2.3rem;
+    --Features-Border-Radius:20px;
+    --Features-Box-Padding:1.4rem;
+    --Features-Front-Image-Height:5rem;
+
+    --Features-Flip-Speed:0.75s;
+    
+    /*----- SECTION: VIDEO -----*/
+    --Video-Gradient-Width:72.5694444vw;
+    --Video-Gradient-Border-Radius:50px;
+    --Video-Left-Gap:-7vw;
+    --Video-Vertical-Gap:3.5rem;
+    --Video-Width:54vw;
+    --Video-Border-Radius:20px;
+    --Video-Avatar-Width:5.5rem;
+    --Video-Hover-Speed:0.3s;
+
+    /*----- SECTION: TEAM -----*/
+    --Team-Section-Width:calc(var(--Container-Width) + (var(--Video-Gradient-Padding-X) * 1.5));
+    --Team-Section-Top-Gap:2rem;
+    --Team-Grid-Spacing-X:4rem;
+    --Team-Grid-Spacing-Y:5.5rem;
+    --Team-Photos-Size:7rem;
+    --Team-Photos-Hover-Speed:0.25s;
+    --Team-Photos-And-Text-Spacing:1rem;
+    --Team-Link-Icons-Size:var(--Heading-Size-L);
+}

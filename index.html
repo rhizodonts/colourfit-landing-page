@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="./assets/images/logo-monogram.ico">
+
+<title>Colourfit 🌈</title>
+
+<link href="./variables.css" rel="stylesheet">
+<link href="./mobile-variables.css" rel="stylesheet">
+<link href="./style.css" rel="stylesheet">
+<link href="./responsive.css" rel="stylesheet">
+
+<script src="./script.js" defer></script>
+
+<link rel="preload" href="./assets/images/headerBG.png" as="image">
+
+</head>
+<body>
+
+<!----- TOP BAR ----->
+<header class="welcome-screen">
+    <nav>
+        <!----- TOP BAR, LOGO ----->
+        <a class="logo-link" href="/" title="Return Home">
+            <!-- logo: multicolored -->
+            <object type="image/svg+xml" data="./assets/svgs/logo.svg">
+                <img src="./assets/images/logo.png" alt="Colourfit Logo"/>
+            </object>
+
+            <!-- logo: white -->
+            <object type="image/svg+xml" data="./assets/svgs/logo-white.svg">
+                <img src="./assets/images/logo-white.png" alt="Colourfit Logo"/>
+            </object>
+        </a>
+
+        <!----- TOP BAR, HAMBURGER ----->
+        <div class="hamburger-container">
+            <button class="hamburger">
+                <!-- hamburger: purple -->
+                <object type="image/svg+xml" data="./assets/svgs/hamburger.svg">
+                    <img src="./assets/images/hamburger.png" alt="Hamburger menu icon"/>
+                </object>
+
+                <!-- hamburger: white -->
+                <object type="image/svg+xml" data="./assets/svgs/hamburger-active.svg">
+                    <img src="./assets/images/hamburger-active.png" alt="Hamburger menu icon"/>
+                </object>
+            </button>
+        </div>
+
+        <!----- TOP BAR, LINKS ----->
+        <div class="nav-links-wrap">
+            <ul class="nav-links">
+                <li>
+                    <a href="#features">Features</a>
+                </li>
+
+                <li>
+                    <a href="#team">Team</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!----- HEADER SECTION ----->
+    <header class="welcome-header">
+        <div class="welcome-header-inner">
+            <!----- HEADER, BACKGROUND GRADIENT ----->
+            <div class="header-gradient"></div>
+
+            <div class="header-wrap">
+                <div class="header-left">
+                    <!----- HEADER, HEADING ----->
+                    <h1>Unlock a world of vibrant <span>possibilites</span></h1>
+
+                    <!----- HEADER, PARAGRAPH ----->
+                    <p>Enhancing dressing experience for visually impaired individuals through accurate outfit color recommendations.</p>
+                </div>
+
+                <!----- HEADER, DESKTOP IMAGES ----->
+                <div class="header-right">
+                    <img src="./assets/images/mockup1.png" alt="Colourfit app preview"/>
+                    <img src="./assets/images/mockup2.png" alt="Colourfit app preview"/>
+                </div>
+            </div><!--end header-wrap-->
+        </div><!--end header-welcome-inner-->
+    </header>
+</header>
+
+
+<main>
+    <!----- DIVIDER / LINE ----->
+    <hr/>
+
+    <!----- SECTION: FEATURES ----->
+    <section class="features-section" id="features">
+        <header class="headings-group">
+            <h2>Features</h2>
+            <p>Enhance the dressing experience for visually impaired individuals through outfit colour recommendations!</p>
+        </header>
+
+        <!----- FEATURES, GRID ----->
+        <article class="features-grid">
+
+            <!----- FEATURE: SCAN ----->
+            <article class="one-feature">
+                <div class="card-inner">
+
+                    <!--- CARD, FRONT -->
+                    <div class="card-front">
+                        <div class="card-front-content">
+                            <div class="feature-column">
+                                <img src="./assets/images/Feat1IMG.png" alt="Scan and Verification"/>
+    
+                                <h3>Scan & Verification</h3>
+                            </div>
+                        </div>
+                    </div><!--end card-front-->
+
+                    <!--- CARD, BACK -->
+                    <div class="card-back">
+                        <div class="card-back-content">
+                            <div class="text-constraint">
+                                <div class="text-column">
+                                    <p>Colour scanning feature provides the users with the actual colours of the item, as soon as the item is correctly scanned.</p>
+                                </div>
+                            </div>
+
+                            <img class="screenshot" src="./assets/images/Feat1Screenshot.png" alt="Colourfit scan preview"/>
+                        </div>
+                    </div><!--end card-back-->
+                </div><!--end card-inner-->
+            </article><!--end one-feature-->
+
+
+            <!----- FEATURE: COLOUR RECS ----->
+            <article class="one-feature">
+                <div class="card-inner">
+
+                    <!--- CARD, FRONT -->
+                    <div class="card-front">
+                        <div class="card-front-content">
+                            <div class="feature-column">
+                                <img src="./assets/images/Feat2IMG.png" alt="Colour Suggestions"/>
+    
+                                <h3>Colour Suggestions</h3>
+                            </div>
+                        </div>
+                    </div><!--end card-front-->
+
+                    <!--- CARD, BACK -->
+                    <div class="card-back">
+                        <div class="card-back-content">
+                            <div class="text-constraint">
+                                <div class="text-column">
+                                    <p>Outfit colour recommendation helps the users to pick clothes based on colour suggestions, considering the skin tone and hair colour.</p>
+                                </div>
+                            </div>
+
+                            <img class="screenshot" src="./assets/images/Feat2Screenshot.png" alt="Colourfit colour suggestions preview"/>
+                        </div>
+                    </div><!--end card-back-->
+                </div><!--end card-inner-->
+            </article><!--end one-feature-->
+
+
+            <!----- FEATURE: CLOSETS ----->
+            <article class="one-feature">
+                <div class="card-inner">
+
+                    <!--- CARD, FRONT -->
+                    <div class="card-front">
+                        <div class="card-front-content">
+                            <div class="feature-column">
+                                <img src="./assets/images/Feat3IMG.png" alt="Closet Organization"/>
+    
+                                <h3>Closet Organization</h3>
+                            </div>
+                        </div>
+                    </div><!--end card-front-->
+
+                    <!--- CARD, BACK -->
+                    <div class="card-back">
+                        <div class="card-back-content">
+                            <div class="text-constraint">
+                                <div class="text-column">
+                                    <p>Closet creation allows the users to create closets based on the items they uploaded in the application and can be arranged as per users’ needs.</p>
+                                </div>
+                            </div>
+
+                            <img class="screenshot" src="./assets/images/Feat3Screenshot.png" alt="Colourfit closets preview"/>
+                        </div>
+                    </div><!--end card-back-->
+                </div><!--end card-inner-->
+            </article><!--end one-feature-->
+
+        </article><!--end features-grid-->
+    </section>
+
+
+
+    <!----- DIVIDER / LINE ----->
+    <hr/>
+    
+    <!----- SECTION: VIDEO ----->
+    <section class="video-section">
+        <div class="video-gradient">
+            <img class="video-avatar avatarTop" src="./assets/images/videoAvatarA.png" alt="Avatar"/>
+            
+            <div class="video-gradient-inner">
+                <div class="video-block">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BktZOoZuA34?si=dk7sDXimGwtw9RrW" title="Colourfit Promotional Video - YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <img class="video-avatar avatarBot" src="./assets/images/videoAvatarB.png" alt="Avatar"/>
+        </div>
+    </section>
+
+
+
+    <!----- DIVIDER / LINE ----->
+    <hr/>
+    
+    <!----- SECTION: TEAM ----->
+    <section class="team-section" id="team">
+        <heading class="headings-group">
+            <h2>The Team</h2>
+            <p>Our exceptional team that turns impossible into possible and creates wonders!</p>
+        </heading>
+
+        <div class="team-grid">
+            <div class="team-row">
+                <div class="one-person">
+                    <div class="avatar-wrap">
+                        <img class="avatar-gray" src="./assets/images/team/gray/ellie.png" alt="Ellie Kim"/>
+                        <img class="avatar-full" src="./assets/images/team/full/ellie.png" alt="Ellie Kim"/>
+                    </div>
+                    
+                    <div class="person-text">
+                        <h4>Jihye Kim <br>(Ellie)</h4>
+                        <p>UI/UX Designer<br>Project Manager</p>
+
+                        <div class="person-links">
+                            <a href="#">
+                                <object type="image/svg+xml" data="./assets/svgs/linkedin.svg">
+                                    <img src="./assets/images/linkedin.png" alt="LinkedIn"/>
+                                </object>
+                            </a>
+
+                            <a href="#">
+                                <object type="image/svg+xml" data="./assets/svgs/link.svg">
+                                    <img src="./assets/images/link.png" alt="Portfolio"/>
+                                </object>
+                            </a>
+                        </div><!--end person-links-->
+                    </div><!--end person-text-->
+                </div><!--end one-person-->
+
+
+                <div class="one-person">
+                    <div class="avatar-wrap">
+                        <img class="avatar-gray" src="./assets/images/team/gray/luna.png" alt="Luna Sever"/>
+                        <img class="avatar-full" src="./assets/images/team/full/luna.png" alt="Luna Sever"/>
+                    </div>
+                    
+                    <div class="person-text">
+                        <h4>Luna<br>Sever</h4>
+                        <p>Design Lead<br>UI/UX Designer</p>
+
+                        <div class="person-links">
+                            <a href="#">
+                                <object type="image/svg+xml" data="./assets/svgs/linkedin.svg">
+                                    <img src="./assets/images/linkedin.png" alt="LinkedIn"/>
+                                </object>
+                            </a>
+
+                            <a href="#">
+                                <object type="image/svg+xml" data="./assets/svgs/link.svg">
+                                    <img src="./assets/images/link.png" alt="Portfolio"/>
+                                </object>
+                            </a>
+                        </div><!--end person-links-->
+                    </div><!--end person-text-->
+                </div><!--end one-person-->
+
+
+                <div class="one-person">
+                    <div class="avatar-wrap">
+                        <img class="avatar-gray" src="./assets/images/team/gray/ricky.png" alt="Ricky Wang"/>
+                        <img class="avatar-full" src="./assets/images/team/full/ricky.png" alt="Ricky Wang"/>
+                    </div>
+                    
+                    <div class="person-text">
+                        <h4>Xinhui<br>Wang (Ricky)</h4>
+                        <p>UI/UX Designer</p>
+
+                        <div class="person-links">
+                            <a href="#">
+                                <object type="image/svg+xml" data="./assets/svgs/linkedin.svg">
+                                    <img src="./assets/images/linkedin.png" alt="LinkedIn"/>
+                                </object>
+                            </a>
+
+                            <a href="#">
+                                <object type="image/svg+xml" data="./assets/svgs/link.svg">
+                                    <img src="./assets/images/link.png" alt="Portfolio"/>
+                                </object>
+                            </a>
+                        </div><!--end person-links-->
+                    </div><!--end person-text-->
+                </div><!--end one-person-->
+            </div><!--end team-row-->
+
+
+
+            <div class="team-row">
+                <div class="one-person">
+                    <div class="avatar-wrap">
+                        <img class="avatar-gray" src="./assets/images/team/gray/anson.png" alt="Anson Su"/>
+                        <img class="avatar-full" src="./assets/images/team/full/anson.png" alt="Anson Su"/>
+                    </div>
+                    
+                    <div class="person-text">
+                        <h4>Anson<br>Su</h4>
+                        <p>Full Stack Developer</p>
+
+                        <div class="person-links">
+                            <a href="#">
+                                <object type="image/svg+xml" data="./assets/svgs/linkedin.svg">
+                                    <img src="./assets/images/linkedin.png" alt="LinkedIn"/>
+                                </object>
+                            </a>
+
+                            <a href="#">
+                                <object type="image/svg+xml" data="./assets/svgs/link.svg">
+                                    <img src="./assets/images/link.png" alt="Portfolio"/>
+                                </object>
+                            </a>
+                        </div><!--end person-links-->
+                    </div><!--end person-text-->
+                </div><!--end one-person-->
+
+
+                <div class="one-person">
+                    <div class="avatar-wrap">
+                        <img class="avatar-gray" src="./assets/images/team/gray/eden.png" alt="Eden Oh"/>
+                        <img class="avatar-full" src="./assets/images/team/full/eden.png" alt="Eden Oh"/>
+                    </div>
+                    
+                    <div class="person-text">
+                        <h4>Se Hyeon<br>Oh (Eden)</h4>
+                        <p>Full Stack Developer</p>
+
+                        <div class="person-links">
+                            <a href="#">
+                                <object type="image/svg+xml" data="./assets/svgs/linkedin.svg">
+                                    <img src="./assets/images/linkedin.png" alt="LinkedIn"/>
+                                </object>
+                            </a>
+
+                            <a href="#">
+                                <object type="image/svg+xml" data="./assets/svgs/link.svg">
+                                    <img src="./assets/images/link.png" alt="Portfolio"/>
+                                </object>
+                            </a>
+                        </div><!--end person-links-->
+                    </div><!--end person-text-->
+                </div><!--end one-person-->
+
+
+                <div class="one-person">
+                    <div class="avatar-wrap">
+                        <img class="avatar-gray" src="./assets/images/team/gray/ht.png" alt="HT Tai"/>
+                        <img class="avatar-full" src="./assets/images/team/full/ht.png" alt="HT Tai"/>
+                    </div>
+                    
+                    <div class="person-text">
+                        <h4>Hiu Tung<br>Tai (HT)</h4>
+                        <p>Front End Developer</p>
+
+                        <div class="person-links">
+                            <a href="#">
+                                <object type="image/svg+xml" data="./assets/svgs/linkedin.svg">
+                                    <img src="./assets/images/linkedin.png" alt="LinkedIn"/>
+                                </object>
+                            </a>
+
+                            <a href="#">
+                                <object type="image/svg+xml" data="./assets/svgs/link.svg">
+                                    <img src="./assets/images/link.png" alt="Portfolio"/>
+                                </object>
+                            </a>
+                        </div><!--end person-links-->
+                    </div><!--end person-text-->
+                </div><!--end one-person-->
+
+
+                <div class="one-person">
+                    <div class="avatar-wrap">
+                        <img class="avatar-gray" src="./assets/images/team/gray/marina.png" alt="Marina Faria"/>
+                        <img class="avatar-full" src="./assets/images/team/full/marina.png" alt="Marina Faria"/>
+                    </div>
+                    
+                    <div class="person-text">
+                        <h4>Marina<br>Faria</h4>
+                        <p>Full Stack Developer</p>
+
+                        <div class="person-links">
+                            <a href="#">
+                                <object type="image/svg+xml" data="./assets/svgs/linkedin.svg">
+                                    <img src="./assets/images/linkedin.png" alt="LinkedIn"/>
+                                </object>
+                            </a>
+
+                            <a href="#">
+                                <object type="image/svg+xml" data="./assets/svgs/link.svg">
+                                    <img src="./assets/images/link.png" alt="Portfolio"/>
+                                </object>
+                            </a>
+                        </div><!--end person-links-->
+                    </div><!--end person-text-->
+                </div><!--end one-person-->
+            </div><!--end team-row-->
+        </div><!--end team-grid-->
+    </section>
+</main>
+
+</body>
+</html>
