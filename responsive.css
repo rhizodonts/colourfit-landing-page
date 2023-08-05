@@ -1,3 +1,4 @@
+/*----------- DESKTOP / WIDE -----------*/
 @media(min-width: 901px){
     html, body {
         overscroll-behavior-y:none;
@@ -8,21 +9,43 @@
     }
 }
 
+/*----------- TABLET / MEDIUM -----------*/
 @media(max-width: 900px){
     body {
         --Nav-Links-Touch-Padding: var(--Mobile-Nav-Links-Touch-Padding);
         --Nav-Links-Spacing: var(--Mobile-Nav-Links-Spacing);
         --Container-Width: var(--Mobile-Container-Width);
-        --Header-Logo-Width: var(--Mobile-Header-Logo-Width);
+        --Nav-Logo-Width: var(--Tablet-Nav-Logo-Width);
+
         --Header-Height: var(--Tablet-Header-Height);
         --Header-Border-Radius: var(--Mobile-Header-Border-Radius);
         --Header-Inner-Margins: var(--Mobile-Header-Inner-Margins);
+
+        --Features-Box-Padding: var(--Tablet-Features-Box-Padding);
         --Features-Front-Image-Height: var(--Mobile-Features-Front-Image-Height);
+
         --Video-Gradient-Width: var(--Tablet-Video-Gradient-Width);
         --Video-Left-Gap: var(--Tablet-Video-Left-Gap);
         --Video-Width: var(--Tablet-Video-Width);
+
         --Team-Grid-Spacing-X:var(--Mobile-Team-Grid-Spacing-X);
         --Team-Grid-Spacing-Y:var(--Mobile-Team-Grid-Spacing-Y);
+        --Team-Photos-Size:var(--Tablet-Team-Photos-Size); /* 20vw */
+
+        --Footer-Padding-X:var(--Tablet-Footer-Padding-X);
+        --Footer-Padding-Y:var(--Tablet-Footer-Padding-Y);
+        --Footer-Tagline-Width:var(--Tablet-Footer-Tagline-Width);
+
+        --Contact-Form-Fields-Width:var(--Tablet-Contact-Form-Fields-Width);
+        --Contact-Form-Fields-Padding-X:var(--Mobile-Contact-Form-Fields-Padding-X);
+        --Contact-Form-Fields-Padding-Y:var(--Mobile-Contact-Form-Fields-Padding-Y);
+        --Contact-Form-Fields-Spacing:var(--Mobile-Contact-Form-Fields-Spacing);
+
+        --Contact-Form-Logo-Width: var(--Tablet-Contact-Form-Logo-Width);
+
+        --Contact-Form-Button-Width: var(--Tablet-Contact-Form-Button-Width);
+        --Contact-Form-Button-Padding-X:var(--Mobile-Contact-Form-Button-Padding-X);
+        --Contact-Form-Button-Padding-Y:var(--Mobile-Contact-Form-Button-Padding-Y);
     }
 
     .welcome-screen {
@@ -40,7 +63,7 @@
         flex-direction:row-reverse;
         width:100%;
         height:var(--Mobile-Nav-Height);
-        background-color:var(--Accent-2);
+        background-color:var(--Background-1);
         align-items:center;
         justify-content:center;
         z-index:10;
@@ -69,6 +92,7 @@
 
     .hamburger-container {
         display:flex;
+        margin-left:5vw;
     }
 
     .hamburger object {
@@ -196,12 +220,12 @@
     }
 
     .nav-links li a {
-        color:var(--Accent-2);
+        color:var(--Background-1);
         font-size:var(--Body-Text-L);
     }
 
     .nav-links li:not(:last-child) a {
-        border-bottom:1px solid rgba(var(--Accent-2-RGB),0.5);
+        border-bottom:1px solid rgba(var(--Background-1-RGB),0.5);
         transform:perspective(0)
     }
 
@@ -225,14 +249,14 @@
         /*
         background:
 
-        linear-gradient(to top, var(--Accent-2), transparent 25%),
+        linear-gradient(to top, var(--Background-1), transparent 25%),
         linear-gradient(to bottom right, #edfafe, transparent 40%),
         linear-gradient(235deg, #d6ceff -20%, transparent),
         linear-gradient(20deg, #ffedd3, transparent);
         */
         /* background-image:url("./assets/images/headerMobileBG.png"); */
         background:
-        linear-gradient(to bottom, white, transparent, transparent, white),
+        linear-gradient(to bottom, var(--Background-1), transparent, transparent, var(--Background-1)),
         url("./assets/images/headerMobileBG.png");
         background-position:top right;
         background-size:cover;
@@ -240,7 +264,7 @@
     }
 
     .header-wrap {
-        grid-template-columns:repeat(2, 1fr)
+        grid-template-columns:repeat(2, 1fr);
     }
 
     .welcome-header h1 {
@@ -253,8 +277,8 @@
         line-height:var(--Line-Height-L)
     }
 
-    .header-right {
-        margin-right:5vw
+    .header-right img {
+        width:69%;
     }
 
     main {
@@ -287,6 +311,7 @@
     }
 
     .text-constraint .text-column p {
+        font-size:var(--Body-Text-L);
         line-height:var(--Line-Height-L)
     }
 
@@ -326,12 +351,6 @@
         max-width:100%;
     }
 
-    .team-section {
-        --Team-Section-Width:var(--Container-Width);
-        --Team-Photos-Size:20vw;
-        --Team-Photos-Mid-Gap:1.5rem;
-    }
-
     .team-grid {
         width:calc((var(--Team-Photos-Size) * 2) + var(--Team-Grid-Spacing-X));
         margin-left:auto;
@@ -358,14 +377,82 @@
     .team-row:not(:first-child) .person-text {
         width:auto;
     }
+
+    .footer-inner {
+        display:block;
+    }
+
+    .tagline-cont {
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .tagline {
+        margin-left:0;
+        text-align:center;
+    }
+
+    .tagline h2 {
+        font-size:calc(var(--Heading-Size-XL) * 0.8)
+    }
+
+    footer form {
+        grid-gap:0;
+        margin-top:3rem;
+    }
+
+    footer form > * {
+        grid-area:initial!important
+    }
+
+    .form-row > * {
+        margin-left:auto;
+        margin-right:auto
+    }
+
+    .form-row + .form-row {
+        margin-top:var(--Contact-Form-Fields-Spacing)
+    }
+
+    .form-submit {
+        margin-top:calc(var(--Mobile-Contact-Form-Fields-Spacing) + 0.5em);
+        grid-area: 5 / 1 / 6 / 2!important;
+        text-align:center;
+    }
+
+    .form-title {
+        margin-top:3rem;
+        grid-area: 6 / 1 / 7 / 2!important;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
 }
 
+/*----------- MOBILE / NARROW -----------*/
 @media(max-width: 672px){
     body {
+        --Nav-Logo-Width: var(--Mobile-Nav-Logo-Width);
+
         --Header-Height: var(--Mobile-Header-Height);
+
+        --Features-Box-Padding: var(--Mobile-Features-Box-Padding);
+
         --Video-Gradient-Width: var(--Mobile-Video-Gradient-Width);
         --Video-Left-Gap: var(--Mobile-Video-Left-Gap);
-        --Video-Width: var(--Mobile-Video-Width)
+        --Video-Width: var(--Mobile-Video-Width);
+
+        --Team-Photos-Size: var(--Mobile-Team-Photos-Size);
+
+        --Footer-Padding-X:var(--Mobile-Footer-Padding-X);
+        --Footer-Padding-Y:var(--Mobile-Footer-Padding-Y);
+
+        --Footer-Tagline-Width:var(--Mobile-Footer-Tagline-Width);
+        --Footer-Quote-Mark-Width:var(--Mobile-Footer-Quote-Mark-Width);
+
+        --Contact-Form-Fields-Width:var(--Mobile-Contact-Form-Fields-Width);
+        --Contact-Form-Logo-Width: var(--Mobile-Contact-Form-Logo-Width);
+        --Contact-Form-Button-Width: var(--Mobile-Contact-Form-Button-Width);
     }
     
     .welcome-header p {
@@ -376,6 +463,10 @@
         line-height:var(--Line-Height-M)
     }
 
+    .header-right img {
+        width:80%;
+    }
+
     .headings-group p, .welcome-header p, .person-text p {
         font-family:bodyFontLight;
         line-height:var(--Line-Height-M)
@@ -384,5 +475,9 @@
     .text-constraint .text-column {
         height:100%;
         display:block;
+    }
+
+    .text-constraint .text-column p {
+        font-size:var(--Body-Text-M);
     }
 }

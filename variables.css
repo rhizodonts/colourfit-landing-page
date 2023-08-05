@@ -1,7 +1,7 @@
 body {
     /*----- LOADING SCREEN -----*/
     --Loading-Screen-FadeOut-Speed:400ms; /* ms only, no s */
-    
+
     /*----- HEADINGS -----*/
     --Heading-Size-S: 0.75rem;
     --Heading-Size-M: 1.25rem;
@@ -27,11 +27,19 @@ body {
     /*----- COLORS -----*/
     --Text-Color-1:#000;
     --Text-Color-2:#313131;
+    --Text-Color-3:#939393;
 
-    --Accent-1:#411e94; /* dark purple */
-    --Accent-1-RGB:65,30,148;
-    --Accent-2: white;
-    --Accent-2-RGB:255,255,255;
+    --Background-1: #fff;
+    --Background-1-RGB: 255, 255, 255;
+
+    --Background-2: #e8e8e8;
+    --Background-2-RGB: 232, 232, 232;
+
+    --Accent-1: #411e94; /* dark purple */
+    --Accent-1-RGB: 65,30,148;
+
+    --Accent-2: #89C4C9; /* light blue */
+    --Accent-2-RGB: 137,196,201;
 
     /*----- GLOBAL SETTINGS -----*/
     --Rainbow-Borders-Width: 3px;
@@ -83,9 +91,33 @@ body {
     --Team-Section-Width:var(--Container-Width);
     --Team-Section-Top-Gap:2rem;
     --Team-Grid-Spacing-X:4rem;
-    --Team-Grid-Spacing-Y:5.5rem;
+    --Team-Grid-Spacing-Y:4rem;
     --Team-Photos-Size:7rem;
     --Team-Photos-Hover-Speed:0.25s;
     --Team-Photos-And-Text-Spacing:1rem;
     --Team-Link-Icons-Size:var(--Heading-Size-L);
+
+    /*----- FOOTER -----*/
+    --Footer-Padding-X:7.5rem;
+    --Footer-Padding-Y:5rem;
+    --Footer-BG:#1E1E1E;
+    --Footer-Text:#fff;
+
+    --Footer-Tagline-Width:25%;
+    --Footer-Quote-Mark-Width:calc(var(--Heading-Size-XXL));
+
+    --Footer-Column-Spacing: 8vw;
+
+    --Contact-Form-Fields-Width:234px;
+    --Contact-Form-Fields-Padding-X:1.8em;
+    --Contact-Form-Fields-Padding-Y:0.8em;
+
+    --Contact-Form-Fields-Spacing:1rem;
+    --Contact-Form-Fields-Right-Gap:2.5rem;
+
+    --Contact-Form-Logo-Width: 150px;
+
+    --Contact-Form-Button-Width:100px;
+    --Contact-Form-Button-Padding-X:0.420em;
+    --Contact-Form-Button-Padding-Y:0.420em;
 }

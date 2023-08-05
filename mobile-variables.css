@@ -1,32 +1,70 @@
 @media(max-width: 900px){
     body {
-        --Mobile-Nav-Height:100px;
-        --Mobile-Header-Logo-Width: 27.1794872vw!important;
+        /*---- TABLET VARIABLES ----*/
+        --Tablet-Nav-Logo-Width: 24vw;
+
+        --Tablet-Header-Height: 76%;
+
+        --Tablet-Features-Box-Padding: 2rem;
+
+        --Tablet-Video-Gradient-Width:76vw;
+        --Tablet-Video-Left-Gap:-10vw;
+        --Tablet-Video-Width:74vw;
+
+        --Tablet-Team-Photos-Size:20vw;
+
+        --Tablet-Footer-Padding-X:3.75rem;
+        --Tablet-Footer-Padding-Y:4rem;
+
+        --Tablet-Footer-Tagline-Width:65%;
+
+        --Tablet-Contact-Form-Fields-Width: 60%;
+        --Tablet-Contact-Form-Logo-Width:28%;
+        --Tablet-Contact-Form-Button-Width: 30%;
+
+        /*---- MOBILE VARIABLES ----*/
+        --Mobile-Nav-Height:85px;
         --Mobile-Hamburger-Size: 1.25rem;
+        --Mobile-Nav-Logo-Width: 27.1794872vw!important;
         --Mobile-Nav-Links-Touch-Padding:2rem;
         --Mobile-Nav-Links-Spacing:0px;
         --Mobile-Nav-Links-Underline-Width: 69%;
         --Mobile-Nav-Transition-Speed:0.4s;
         --Mobile-Nav-Transition-Speed-Fast:0.3s;
 
-        --Mobile-Container-Width:76%;
-        --Tablet-Header-Height: var(--Mobile-Container-Width);
+        --Mobile-Container-Width:76%;       
+
         --Mobile-Header-Height: 100%;
         --Mobile-Header-Border-Radius:0px; /* was 20px */
         --Mobile-Header-Inner-Margins:2.5rem;
 
+        --Mobile-Features-Box-Padding:1.5rem;
         --Mobile-Features-Front-Image-Height:20vw;
 
-        --Mobile-Video-Left-Gap:-10vw;
-        --Tablet-Video-Left-Gap:-10vw;
-
-        --Mobile-Video-Width:74vw;
-        --Tablet-Video-Width:74vw;
-
         --Mobile-Video-Gradient-Width:80vw;
-        --Tablet-Video-Gradient-Width:76vw;
+        --Mobile-Video-Left-Gap:-10vw;
+        --Mobile-Video-Width:74vw;
 
         --Mobile-Team-Grid-Spacing-X:3rem;
-        --Mobile-Team-Grid-Spacing-Y:3rem;
+        --Mobile-Team-Grid-Spacing-Y:3rem;     
+        --Mobile-Team-Photos-Size:27vw;   
+
+        --Mobile-Footer-Padding-X:5rem;
+        --Mobile-Footer-Padding-Y:5rem;
+
+        --Mobile-Footer-Tagline-Width:65%;
+
+        --Mobile-Footer-Quote-Mark-Width:var(--Heading-Size-XL);
+
+        --Mobile-Contact-Form-Fields-Width: 100%;
+        --Mobile-Contact-Form-Fields-Padding-X: 1.69em;
+        --Mobile-Contact-Form-Fields-Padding-Y: 1em;
+        --Mobile-Contact-Form-Fields-Spacing:1rem;
+
+        --Mobile-Contact-Form-Logo-Width:40%;
+
+        --Mobile-Contact-Form-Button-Width: 45%;
+        --Mobile-Contact-Form-Button-Padding-X: 0.6em;
+        --Mobile-Contact-Form-Button-Padding-Y: 0.6em;
     }
 }
