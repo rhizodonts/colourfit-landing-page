@@ -1,10 +1,10 @@
-/*-------------------------------*/
-
 let mainContent = document.querySelector(".main-content");
 let video = document.querySelector(".loading-screen video");
 
 let loadingFadeOutSpeed = Number(getComputedStyle(document.body).getPropertyValue("--Loading-Screen-FadeOut-Speed").replace(/[^\d\.]*/g,""));
 
+// [1/2] fade out loading animation when complete
+// [2/2] fade in main content when animation is complete
 if(video && mainContent){
     video.addEventListener("ended", () => {
         mainContent.classList.add("appear");
@@ -15,7 +15,6 @@ if(video && mainContent){
         }, loadingFadeOutSpeed)
     })
 }
-
 
 /*-------------------------------*/
 
@@ -29,6 +28,8 @@ const navLinksHeight = () => {
 }
 /*-------------------------------*/
 
+// resize iframe height width the corresponding width
+// keeping the original ratio
 const updateVideoSize = () => {
     let iframes = document.querySelectorAll("iframe");
     if(iframes){
@@ -44,6 +45,8 @@ const updateVideoSize = () => {
         })
     }
 }
+
+/*-------------------------------*/
 
 // when page has loaded, run the following
 document.addEventListener("DOMContentLoaded", () => {
@@ -76,4 +79,10 @@ navLinks.addEventListener("click", (e) => {
     if(e.target.matches("a") && navBar.matches(".active")){
         navBar.classList.remove("active")
     }
+})
+
+// stop form submission bc the form doesn't actually work
+let theForm = document.querySelector("footer form");
+theForm.addEventListener("submit", (e) => {
+    e.preventDefault();
 })
