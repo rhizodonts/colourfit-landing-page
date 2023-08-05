@@ -36,12 +36,12 @@ h1 {
 
 h2, h3, h4, h5, h6, button {    
     font-family: headingFont;
-    font-weight: normal;
 }
 
 h1, h2, h3, h4, h5, h6, button {
     letter-spacing: var(--Heading-Letter-Spacing);
-    line-height:var(--Line-Height-M)
+    line-height:var(--Line-Height-M);
+    font-weight: normal;
 }
 
 img, canvas, object, video, figure, iframe {

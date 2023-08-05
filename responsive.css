@@ -25,6 +25,7 @@
         --Features-Front-Image-Height: var(--Mobile-Features-Front-Image-Height);
 
         --Video-Gradient-Width: var(--Tablet-Video-Gradient-Width);
+        --Video-Vertical-Gap: var(--Mobile-Video-Vertical-Gap);
         --Video-Left-Gap: var(--Tablet-Video-Left-Gap);
         --Video-Width: var(--Tablet-Video-Width);
 
@@ -439,6 +440,7 @@
         --Features-Box-Padding: var(--Mobile-Features-Box-Padding);
 
         --Video-Gradient-Width: var(--Mobile-Video-Gradient-Width);
+        --Video-Vertical-Gap: var(--Tablet-Video-Vertical-Gap);
         --Video-Left-Gap: var(--Mobile-Video-Left-Gap);
         --Video-Width: var(--Mobile-Video-Width);
 

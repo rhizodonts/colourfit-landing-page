@@ -8,6 +8,7 @@
         --Tablet-Features-Box-Padding: 2rem;
 
         --Tablet-Video-Gradient-Width:76vw;
+        --Tablet-Video-Vertical-Gap:3rem;
         --Tablet-Video-Left-Gap:-10vw;
         --Tablet-Video-Width:74vw;
 
@@ -42,6 +43,7 @@
         --Mobile-Features-Front-Image-Height:20vw;
 
         --Mobile-Video-Gradient-Width:80vw;
+        --Mobile-Video-Vertical-Gap:1.5rem;
         --Mobile-Video-Left-Gap:-10vw;
         --Mobile-Video-Width:74vw;
 
