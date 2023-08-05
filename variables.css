@@ -1,4 +1,7 @@
 body {
+    /*----- LOADING SCREEN -----*/
+    --Loading-Screen-FadeOut-Speed:400ms; /* ms only, no s */
+    
     /*----- HEADINGS -----*/
     --Heading-Size-S: 0.75rem;
     --Heading-Size-M: 1.25rem;
@@ -77,7 +80,7 @@ body {
     --Video-Hover-Speed:0.3s;
 
     /*----- SECTION: TEAM -----*/
-    --Team-Section-Width:calc(var(--Container-Width) + (var(--Video-Gradient-Padding-X) * 1.5));
+    --Team-Section-Width:var(--Container-Width);
     --Team-Section-Top-Gap:2rem;
     --Team-Grid-Spacing-X:4rem;
     --Team-Grid-Spacing-Y:5.5rem;

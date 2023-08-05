@@ -17,6 +17,15 @@
 
         --Mobile-Features-Front-Image-Height:20vw;
 
+        --Mobile-Video-Left-Gap:-10vw;
+        --Tablet-Video-Left-Gap:-10vw;
+
+        --Mobile-Video-Width:74vw;
+        --Tablet-Video-Width:74vw;
+
+        --Mobile-Video-Gradient-Width:80vw;
+        --Tablet-Video-Gradient-Width:76vw;
+
         --Mobile-Team-Grid-Spacing-X:3rem;
         --Mobile-Team-Grid-Spacing-Y:3rem;
     }

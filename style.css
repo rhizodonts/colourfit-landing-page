@@ -37,6 +37,7 @@ h1 {
 
 h2, h3, h4, h5, h6, button {    
     font-family: headingFont;
+    font-weight: normal;
 }
 
 h1, h2, h3, h4, h5, h6, button {
@@ -52,6 +53,45 @@ img, canvas, object, video, figure, iframe {
 a {
     text-decoration:none;
     color:var(--Text-Color-1)
+}
+
+/*----- LOADING SCREEN -----*/
+.loading-screen {
+    position:fixed;
+    top:0;left:0;
+    width:100vw;
+    height:100vh;
+    background-color:white;
+    z-index:99;
+}
+
+.loading-screen video {
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    pointer-events:none;
+}
+
+.disappear {
+    opacity:0
+}
+
+.loading-screen, .loading-screen.disappear {
+    transition:opacity var(--Loading-Screen-FadeOut-Speed) ease-in-out
+}
+
+/*----- ALL CONTENT -----*/
+.main-content {
+    opacity:0;
+}
+
+.appear {
+    opacity:1;
+}
+
+.main-content, .main-content.appear {
+    transition:opacity var(--Loading-Screen-FadeOut-Speed) ease-in-out
 }
 
 /*----------------------------*/
@@ -177,7 +217,7 @@ nav ul {
     */
     height:var(--Header-Height);
     background-image:url("./assets/images/headerBG.png");
-    background-size:contain;
+    background-size:cover;
     background-position:center right;
     background-repeat:no-repeat;
     border-radius:var(--Header-Border-Radius)
@@ -464,7 +504,6 @@ hr {
     );
     border-radius:var(--Video-Gradient-Border-Radius) 0 0 var(--Video-Gradient-Border-Radius);
     box-sizing:border-box;
-    transition:all var(--Video-Hover-Speed) ease-in-out;
     z-index:1;
 }
 
@@ -546,27 +585,28 @@ hr {
 }
 
 .team-grid {
-    display:grid;
-    grid-auto-flow:row;
-    margin-top:var(--Team-Section-Top-Gap)
-}
-
-.team-row {
-    display:grid;
-    grid-auto-flow:column;
+    margin-top:var(--Team-Section-Top-Gap);
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    flex-wrap:wrap;
     justify-content:center;
-    grid-gap:var(--Team-Grid-Spacing-Y) var(--Team-Grid-Spacing-X)
-}
-
-.team-row + .team-row {
-    margin-top:var(--Team-Grid-Spacing-Y)
+    gap:0 var(--Team-Grid-Spacing-X)
 }
 
 .one-person {
     display:flex;
     flex-direction:column;
     align-items:center;
-    gap:var(--Team-Photos-And-Text-Spacing)
+    gap:var(--Team-Photos-And-Text-Spacing);
+    width:var(--Team-Photos-Size);
+    flex-shrink:0;
+}
+
+.flex-break {
+    margin-top:var(--Team-Grid-Spacing-Y);
+    flex-basis: 100%;
+    height: 0;
 }
 
 .avatar-wrap {

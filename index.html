@@ -20,7 +20,14 @@
 </head>
 <body>
 
+<!----- LOADING ANIMATION ----->
+<div class="loading-screen">
+    <video muted autoplay src="./assets/videos/welcome.mp4"></video>
+</div>
+
 <!----- TOP BAR ----->
+<div class="main-content">
+
 <header class="welcome-screen">
     <nav>
         <!----- TOP BAR, LOGO ----->
@@ -236,8 +243,8 @@
             <p>Our exceptional team that turns impossible into possible and creates wonders!</p>
         </heading>
 
+
         <div class="team-grid">
-            <div class="team-row">
                 <div class="one-person">
                     <div class="avatar-wrap">
                         <img class="avatar-gray" src="./assets/images/team/gray/ellie.png" alt="Ellie Kim"/>
@@ -317,11 +324,12 @@
                         </div><!--end person-links-->
                     </div><!--end person-text-->
                 </div><!--end one-person-->
-            </div><!--end team-row-->
+
+
+                <div class="flex-break"></div>
 
 
 
-            <div class="team-row">
                 <div class="one-person">
                     <div class="avatar-wrap">
                         <img class="avatar-gray" src="./assets/images/team/gray/anson.png" alt="Anson Su"/>
@@ -428,10 +436,11 @@
                         </div><!--end person-links-->
                     </div><!--end person-text-->
                 </div><!--end one-person-->
-            </div><!--end team-row-->
         </div><!--end team-grid-->
     </section>
 </main>
+
+</div><!--end main-content-->
 
 </body>
 </html>
