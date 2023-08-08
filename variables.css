@@ -8,6 +8,7 @@ body {
     --Heading-Size-L: 1.375rem;
     --Heading-Size-XL: 2rem;
     --Heading-Size-XXL: 2.5rem;
+    --Heading-Size-XXXL: 3rem;
     --Heading-Letter-Spacing:0px;
 
     /*----- BODY TEXT -----*/
@@ -15,6 +16,7 @@ body {
     --Body-Text-S: 0.75rem;
     --Body-Text-M: 0.875rem;
     --Body-Text-L: 1rem;
+    --Body-Text-Letter-Spacing-XS:0.02em;
     --Body-Text-Letter-Spacing-S:0.03em;
     --Body-Text-Letter-Spacing-M:0.06em;
 
@@ -28,6 +30,8 @@ body {
     --Text-Color-1:#000;
     --Text-Color-2:#313131;
     --Text-Color-3:#939393;
+    --Text-Color-4: #6D6D6D;
+    --Nav-Links-Color:#464646;
 
     --Background-1: #fff;
     --Background-1-RGB: 255, 255, 255;
@@ -40,6 +44,10 @@ body {
 
     --Accent-2: #89C4C9; /* light blue */
     --Accent-2-RGB: 137,196,201;
+
+    --Line-Color: #e6e6e6 ;
+
+    --Off-White: #F9F9F9;
 
     /*----- GLOBAL SETTINGS -----*/
     --Rainbow-Borders-Width: 3px;
@@ -55,17 +63,19 @@ body {
     --Nav-Logo-Width: 160px;
 
     --Nav-Links-Touch-Padding: 10px;
-    --Nav-Links-Spacing: 3.5rem;
+    --Nav-Links-Spacing: 3.75rem;
 
     /*----- HEADER -----*/
     --Header-Height: calc(var(--Container-Width) * 0.6);
     --Header-Border-Radius:50px;
     --Header-Inner-Margins: 48px;
     --Header-Text-Row-Spacing: 2rem;
+    --Header-Text-Translate: 80px;
 
     /*----- SECTION: GAPS -----*/
     --Sections-Divider-Width:83vw;
     --Sections-Spacing-Y:5rem;
+    --Sections-Max-Width: 933px;
 
     /*----- SECTION: FEATURES -----*/
     --Features-Grid-Top-Gap:2rem;
@@ -73,7 +83,7 @@ body {
     --Features-Spacing:2.3rem;
     --Features-Border-Radius:20px;
     --Features-Box-Padding:1.4rem;
-    --Features-Front-Image-Height:5rem;
+    --Features-Front-Image-Height:6rem;
 
     --Features-Flip-Speed:0.75s;
     

@@ -1,3 +1,12 @@
+<!--------------------------------------------
+
+    COLOURFIT © 2023
+
+    Credits:
+    - "clappr" video player:
+      https://github.com/clappr/clappr
+
+--------------------------------------------->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +25,7 @@
 <link href="./responsive.css" rel="stylesheet">
 
 <script src="./script.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
 
 <link rel="preload" href="./assets/images/headerBG.png" as="image">
 
@@ -24,7 +34,7 @@
 
 <!----- LOADING ANIMATION ----->
 <div class="loading-screen">
-    <video muted autoplay src="./assets/videos/welcome.mp4"></video>
+    <video muted autoplay src="./assets/videos/welcome-short.mp4" preload></video>
 </div>
 
 <!----- TOP BAR ----->
@@ -37,11 +47,6 @@
             <!-- logo: multicolored -->
             <object type="image/svg+xml" data="./assets/svgs/logo.svg">
                 <img src="./assets/images/logo.png" alt="Colourfit Logo"/>
-            </object>
-
-            <!-- logo: white -->
-            <object type="image/svg+xml" data="./assets/svgs/logo-white.svg">
-                <img src="./assets/images/logo-white.png" alt="Colourfit Logo"/>
             </object>
         </a>
 
@@ -68,42 +73,45 @@
                 </li>
 
                 <li>
-                    <a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:b150a20f-a618-3c00-9cd9-5ba42f785f0f">Proposal</a>
-                </li>
-
-                <li>
                     <a href="#team">Team</a>
                 </li>
 
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
+
+                <li>
+                    <a class="download-proposal-btn" target="_blank" href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:b150a20f-a618-3c00-9cd9-5ba42f785f0f">Download Proposal</a>
+                </li>
             </ul>
         </div>
     </nav>
+    
+    <!----- DIVIDER / LINE ----->
+    <hr class="nav-divider">
 
     <!----- HEADER SECTION ----->
     <header class="welcome-header">
-        <div class="welcome-header-inner">
+        <div class="header-gradient"></div>
             <!----- HEADER, BACKGROUND GRADIENT ----->
-            <div class="header-gradient"></div>
-
             <div class="header-wrap">
                 <div class="header-left">
                     <!----- HEADER, HEADING ----->
-                    <h1>Unlock a world of vibrant <span>possibilites</span></h1>
-
-                    <!----- HEADER, PARAGRAPH ----->
-                    <p>Enhancing dressing experience for visually impaired individuals through accurate outfit color recommendations.</p>
+                    <h1 aria-label="Unlock a world of vibrant possibilities">
+                        Unlock a world of vibrant <span>possibilities</span>
+                    </h1>
                 </div>
 
                 <!----- HEADER, DESKTOP IMAGES ----->
+                <div class="header-middle">
+                    <img src="./assets/images/mockup1-2-merged.png" alt="Colourfit app preview"/>
+                </div>
+
                 <div class="header-right">
-                    <img src="./assets/images/mockup1.png" alt="Colourfit app preview"/>
-                    <img src="./assets/images/mockup2.png" alt="Colourfit app preview"/>
+                    <!----- HEADER, PARAGRAPH ----->
+                    <p>Enhance the dressing experience for  visually impaired individuals through outfit colour recommendations!</p>
                 </div>
             </div><!--end header-wrap-->
-        </div><!--end header-welcome-inner-->
     </header>
 </header>
 
@@ -127,12 +135,11 @@
                 <div class="card-inner">
 
                     <!--- CARD, FRONT -->
-                    <div class="card-front">
+                    <div class="card-front  ">
                         <div class="card-front-content">
                             <div class="feature-column">
+                                <h3>Scan & verification</h3>
                                 <img src="./assets/images/Feat1IMG.png" alt="Scan and Verification"/>
-    
-                                <h3>Scan & Verification</h3>
                             </div>
                         </div>
                     </div><!--end card-front-->
@@ -152,38 +159,6 @@
                 </div><!--end card-inner-->
             </article><!--end one-feature-->
 
-
-            <!----- FEATURE: COLOUR RECS ----->
-            <article class="one-feature">
-                <div class="card-inner">
-
-                    <!--- CARD, FRONT -->
-                    <div class="card-front">
-                        <div class="card-front-content">
-                            <div class="feature-column">
-                                <img src="./assets/images/Feat2IMG.png" alt="Colour Suggestions"/>
-    
-                                <h3>Colour Suggestions</h3>
-                            </div>
-                        </div>
-                    </div><!--end card-front-->
-
-                    <!--- CARD, BACK -->
-                    <div class="card-back">
-                        <div class="card-back-content">
-                            <div class="text-constraint">
-                                <div class="text-column">
-                                    <p>Outfit colour recommendation helps the users to pick clothes based on colour suggestions, considering the skin tone and hair colour.</p>
-                                </div>
-                            </div>
-
-                            <img class="screenshot" src="./assets/images/Feat2Screenshot.png" alt="Colourfit colour suggestions preview"/>
-                        </div>
-                    </div><!--end card-back-->
-                </div><!--end card-inner-->
-            </article><!--end one-feature-->
-
-
             <!----- FEATURE: CLOSETS ----->
             <article class="one-feature">
                 <div class="card-inner">
@@ -192,9 +167,8 @@
                     <div class="card-front">
                         <div class="card-front-content">
                             <div class="feature-column">
+                                <h3>Closet organization</h3>
                                 <img src="./assets/images/Feat3IMG.png" alt="Closet Organization"/>
-    
-                                <h3>Closet Organization</h3>
                             </div>
                         </div>
                     </div><!--end card-front-->
@@ -209,6 +183,35 @@
                             </div>
 
                             <img class="screenshot" src="./assets/images/Feat3Screenshot.png" alt="Colourfit closets preview"/>
+                        </div>
+                    </div><!--end card-back-->
+                </div><!--end card-inner-->
+            </article><!--end one-feature-->
+
+            <!----- FEATURE: COLOUR RECS ----->
+            <article class="one-feature">
+                <div class="card-inner">
+
+                    <!--- CARD, FRONT -->
+                    <div class="card-front">
+                        <div class="card-front-content">
+                            <div class="feature-column">
+                                <h3>Colour suggestions</h3>
+                                <img src="./assets/images/Feat2IMG.png" alt="Colour Suggestions"/>
+                            </div>
+                        </div>
+                    </div><!--end card-front-->
+
+                    <!--- CARD, BACK -->
+                    <div class="card-back">
+                        <div class="card-back-content">
+                            <div class="text-constraint">
+                                <div class="text-column">
+                                    <p>Outfit colour recommendation helps the users to pick clothes based on colour suggestions, considering the skin tone and hair colour.</p>
+                                </div>
+                            </div>
+
+                            <img class="screenshot" src="./assets/images/Feat2Screenshot.png" alt="Colourfit colour suggestions preview"/>
                         </div>
                     </div><!--end card-back-->
                 </div><!--end card-inner-->
@@ -229,7 +232,14 @@
             
             <div class="video-gradient-inner">
                 <div class="video-block">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BktZOoZuA34?si=dk7sDXimGwtw9RrW&amp;rel=0&amp;modestbranding=1" title="Colourfit Promotional Video - YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/BktZOoZuA34?si=dk7sDXimGwtw9RrW&amp;rel=0&amp;modestbranding=1" title="Colourfit Promotional Video - YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                    <script>
+                        var player = new Clappr.Player({
+                            parentId: ".video-block",
+                            source: "./assets/videos/ColourFit_LongVideo_V3.mp4",
+                            poster: "./assets/images/videoPoster.jpg",
+                        });
+                    </script>
                 </div>
             </div>
 
@@ -238,6 +248,43 @@
     </section>
 
 
+    <!----- DIVIDER / LINE ----->
+    <hr/>
+
+    <!----- SECTION: MOCKUPS ----->
+    <section class="mockups-section">
+        <header class="headings-group">
+            <h2>Mockups</h2>
+            <p>Check out our mockups our choice of colors aims to ensure high contrast and improved visibility, catering to all users!</p>
+        </header>
+        
+        <div class="mockups-grid mockups-grid-desktop">
+            <div><img src="./assets/images/mockups/card-reverse.png" alt="Colourfit mockup: home screen, trending slider item flip view."></div>
+            <div><img src="./assets/images/mockups/items.png" alt="Colourfit mockup: closet screen, showing pinned colours and the user's clothing items."></div>
+            <div><img src="./assets/images/mockups/profile.png" alt="Colourfit mockup: edit profile screen, change hair colour dropdown."></div>
+            <div><img src="./assets/images/mockups/closet.png" alt="Colourfit mockup: closet screen, showing pinned colors and the user's custom closets."></div>
+            <div><img src="./assets/images/mockups/scan.png" alt="Colourfit mockup: save scanned clothing item screen with colour information and fields to confirm texture and clothing type."></div>
+        </div>
+
+        <div class="mockups-grid mockups-grid-mobile">
+            <div class="mockups-grid-row">
+                <div><img src="./assets/images/mockups/card-reverse.png" alt="Colourfit mockup: home screen, trending slider item flip view."></div>
+                <div><img src="./assets/images/mockups/items.png" alt="Colourfit mockup: closet screen, showing pinned colours and the user's clothing items."></div>
+            </div>
+            <div class="mockups-grid-row">
+                <div><img src="./assets/images/mockups/profile.png" alt="Colourfit mockup: edit profile screen, change hair colour dropdown."></div>
+                <div><img src="./assets/images/mockups/closet.png" alt="Colourfit mockup: closet screen, showing pinned colors and the user's custom closets."></div>
+                <div><img src="./assets/images/mockups/scan.png" alt="Colourfit mockup: save scanned clothing item screen with colour information and fields to confirm texture and clothing type."></div>
+            </div>
+            
+            
+        </div>
+
+        <div class="mockups-btn">
+            <a class="download-proposal-btn" target="_blank" href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:b150a20f-a618-3c00-9cd9-5ba42f785f0f">Download Proposal</a>
+        </div>
+    </section>
+    
 
     <!----- DIVIDER / LINE ----->
     <hr/>
@@ -262,13 +309,13 @@
                         <p>UI/UX Designer<br>Project Manager</p>
 
                         <div class="person-links">
-                            <a href="https://www.linkedin.com/in/elliejhkim12/">
+                            <a target="_blank" href="https://www.linkedin.com/in/elliejhkim12/">
                                 <object type="image/svg+xml" data="./assets/svgs/linkedin.svg">
                                     <img src="./assets/images/linkedin.png" alt="LinkedIn"/>
                                 </object>
                             </a>
 
-                            <a href="http://elliejkim.com/">
+                            <a target="_blank" href="http://elliejkim.com/">
                                 <object type="image/svg+xml" data="./assets/svgs/link.svg">
                                     <img src="./assets/images/link.png" alt="Portfolio"/>
                                 </object>
@@ -289,13 +336,13 @@
                         <p>Design Lead<br>UI/UX Designer</p>
 
                         <div class="person-links">
-                            <a href="https://www.linkedin.com/in/lunasever">
+                            <a target="_blank" href="https://www.linkedin.com/in/lunasever">
                                 <object type="image/svg+xml" data="./assets/svgs/linkedin.svg">
                                     <img src="./assets/images/linkedin.png" alt="LinkedIn"/>
                                 </object>
                             </a>
 
-                            <a href="https://lunasever.com">
+                            <a target="_blank" href="https://lunasever.com">
                                 <object type="image/svg+xml" data="./assets/svgs/link.svg">
                                     <img src="./assets/images/link.png" alt="Portfolio"/>
                                 </object>
@@ -316,13 +363,13 @@
                         <p>UI/UX Designer</p>
 
                         <div class="person-links">
-                            <a href="https://www.linkedin.com/in/xinhuiwang">
+                            <a target="_blank" href="https://www.linkedin.com/in/xinhuiwang">
                                 <object type="image/svg+xml" data="./assets/svgs/linkedin.svg">
                                     <img src="./assets/images/linkedin.png" alt="LinkedIn"/>
                                 </object>
                             </a>
 
-                            <a href="http://xinhuiwang.ca">
+                            <a target="_blank" href="http://xinhuiwang.ca">
                                 <object type="image/svg+xml" data="./assets/svgs/link.svg">
                                     <img src="./assets/images/link.png" alt="Portfolio"/>
                                 </object>
@@ -347,13 +394,13 @@
                         <p>Full Stack Developer</p>
 
                         <div class="person-links">
-                            <a href="https://www.linkedin.com/in/anson-su/">
+                            <a target="_blank" href="https://www.linkedin.com/in/anson-su/">
                                 <object type="image/svg+xml" data="./assets/svgs/linkedin.svg">
                                     <img src="./assets/images/linkedin.png" alt="LinkedIn"/>
                                 </object>
                             </a>
 
-                            <a href="https://github.com/ansonsow">
+                            <a target="_blank" href="https://github.com/ansonsow">
                                 <object type="image/svg+xml" data="./assets/svgs/link.svg">
                                     <img src="./assets/images/link.png" alt="Portfolio"/>
                                 </object>
@@ -374,13 +421,13 @@
                         <p>Full Stack Developer</p>
 
                         <div class="person-links">
-                            <a href="https://www.linkedin.com/in/se-hyeon-oh-35055416b/">
+                            <a target="_blank" href="https://www.linkedin.com/in/se-hyeon-oh-35055416b/">
                                 <object type="image/svg+xml" data="./assets/svgs/linkedin.svg">
                                     <img src="./assets/images/linkedin.png" alt="LinkedIn"/>
                                 </object>
                             </a>
 
-                            <a href="https://github.com/salomon-oh">
+                            <a target="_blank" href="https://github.com/salomon-oh">
                                 <object type="image/svg+xml" data="./assets/svgs/link.svg">
                                     <img src="./assets/images/link.png" alt="Portfolio"/>
                                 </object>
@@ -401,13 +448,13 @@
                         <p>Front End Developer</p>
 
                         <div class="person-links">
-                            <a href="https://www.linkedin.com/in/ht-dev">
+                            <a target="_blank" href="https://www.linkedin.com/in/ht-dev">
                                 <object type="image/svg+xml" data="./assets/svgs/linkedin.svg">
                                     <img src="./assets/images/linkedin.png" alt="LinkedIn"/>
                                 </object>
                             </a>
 
-                            <a href="https://dub.sh/ht-dev">
+                            <a target="_blank" href="https://dub.sh/ht-dev">
                                 <object type="image/svg+xml" data="./assets/svgs/link.svg">
                                     <img src="./assets/images/link.png" alt="Portfolio"/>
                                 </object>
@@ -428,13 +475,13 @@
                         <p>Full Stack Developer</p>
 
                         <div class="person-links">
-                            <a href="https://www.linkedin.com/in/marinacfaria/">
+                            <a target="_blank" href="https://www.linkedin.com/in/marinacfaria/">
                                 <object type="image/svg+xml" data="./assets/svgs/linkedin.svg">
                                     <img src="./assets/images/linkedin.png" alt="LinkedIn"/>
                                 </object>
                             </a>
 
-                            <a href="https://github.com/mahzinhaaugusto">
+                            <a target="_blank" href="https://github.com/mahzinhaaugusto">
                                 <object type="image/svg+xml" data="./assets/svgs/link.svg">
                                     <img src="./assets/images/link.png" alt="Portfolio"/>
                                 </object>
