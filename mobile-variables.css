@@ -3,6 +3,8 @@
         /*---- TABLET VARIABLES ----*/
         --Tablet-Nav-Logo-Width: 24vw;
 
+        --Tablet-Hamburger-Size: 1.25rem;
+
         --Tablet-Header-Height: 76%;
 
         --Tablet-Features-Box-Padding: 2rem;
@@ -25,8 +27,8 @@
 
         /*---- MOBILE VARIABLES ----*/
         --Mobile-Nav-Height:85px;
-        --Mobile-Hamburger-Size: 1.25rem;
-        --Mobile-Nav-Logo-Width: 27.1794872vw!important;
+        --Mobile-Hamburger-Size: 1rem;
+        --Mobile-Nav-Logo-Width: 30vw!important;
         --Mobile-Nav-Links-Touch-Padding:1rem;
         --Mobile-Nav-Links-Spacing:0px;
         --Mobile-Nav-Links-Underline-Width: 69%;
@@ -51,8 +53,8 @@
         --Mobile-Team-Grid-Spacing-Y:3rem;     
         --Mobile-Team-Photos-Size:27vw;   
 
-        --Mobile-Footer-Padding-X:5rem;
-        --Mobile-Footer-Padding-Y:5rem;
+        --Mobile-Footer-Padding-X:2.25rem;
+        --Mobile-Footer-Padding-Y:3rem;
 
         --Mobile-Footer-Tagline-Width:65%;
 

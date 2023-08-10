@@ -52,7 +52,7 @@ img, canvas, object, video, figure, iframe {
 a {
     font-family: headingFont;
     font-size:var(--Body-Text-L);
-    font-weight:600;
+    font-weight:normal;
     text-decoration:none;
     color:var(--Nav-Links-Color);
 }
@@ -649,17 +649,12 @@ hr.nav-divider {
     z-index:0;
 }
 
-.video-block .player-wrapper svg:after {
-    content:"";
-    position:absolute;
-    top:0;left:0;
-    width:100%;
-    height:100%;
-    background:purple
-}
-
 .video-block .play-wrapper svg path[fill]{
     fill: #a7b2e7!important;
+}
+
+[data-bounce1], [data-bounce2], [data-bounce3]{
+    background-color:#a7b2e7!important;
 }
 
 .video-block img {

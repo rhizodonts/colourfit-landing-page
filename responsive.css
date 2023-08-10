@@ -44,6 +44,7 @@
         --Nav-Links-Spacing: var(--Mobile-Nav-Links-Spacing);
         --Container-Width: var(--Mobile-Container-Width);
         --Nav-Logo-Width: var(--Tablet-Nav-Logo-Width);
+        --Mobile-Hamburger-Size: var(--Tablet-Hamburger-Size);
 
         --Header-Height: var(--Tablet-Header-Height);
         --Header-Border-Radius: var(--Mobile-Header-Border-Radius);
@@ -223,12 +224,12 @@
     /*---------------------------*/
 
     .welcome-header {
-        display:block;
+        display:flex;
         margin:auto;
         margin-top:var(--Mobile-Nav-Height);
         margin-bottom:calc(0px - var(--Sections-Spacing-Y));
         width:100%;
-        height: calc(100vh - var(--Mobile-Nav-Height));
+        min-height: calc(100vh - var(--Mobile-Nav-Height));
     }
 
     .header-gradient {
@@ -268,7 +269,9 @@
     }
 
     .header-middle {
-        max-height:70%;
+        margin-left:auto;
+        margin-right:auto;
+        max-width:54vw;
         justify-content: center;
     }
 
@@ -313,7 +316,8 @@
     /*---------------------------*/
 
     .mockups-grid.mockups-grid-mobile {
-        display: block;
+        display:flex;
+        flex-direction:column;
         padding: 14px 24px;
     }
 
@@ -324,11 +328,15 @@
     .mockups-grid-row {
         display: flex;
         justify-content: center;
-        height: 160px;
+        /* height: 160px; */
     }
 
     .mockups-grid-row img {
         max-height: 100%;
+    }
+
+    .mockups-grid-mobile .mockups-grid-row:first-child:not(:last-child) > div {
+        width:calc(100% / 3);
     }
 
     /*---------------------------*/
@@ -353,6 +361,10 @@
 
     .video-gradient-inner {
         background:transparent;
+    }
+
+    .video-block .play-wrapper {
+        height:2.75rem!important
     }
 
     .video-gradient:after, .video-avatar {
@@ -451,6 +463,7 @@
 @media(max-width: 672px){
     body {
         --Nav-Logo-Width: var(--Mobile-Nav-Logo-Width);
+        --Mobile-Hamburger-Size: 1rem;
 
         --Header-Height: var(--Mobile-Header-Height);
 
@@ -491,10 +504,9 @@
         line-height:var(--Line-Height-M)
     }
 
-    /* .text-constraint .text-column {
-        height:100%;
-        display:block;
-    } */
+    .text-constraint .text-column {
+        align-items:initial;
+    }
 
     .text-constraint .text-column p {
         font-size:var(--Body-Text-M);

@@ -27,14 +27,14 @@
 <script src="./script.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
 
-<link rel="preload" href="./assets/images/headerBG.png" as="image">
+<!-- <link rel="preload" href="./assets/images/headerBG.png" as="image"> -->
 
 </head>
 <body>
 
 <!----- LOADING ANIMATION ----->
 <div class="loading-screen">
-    <video muted autoplay src="./assets/videos/welcome-short.mp4" preload></video>
+    <video muted autoplay src="./assets/videos/welcome-short.mp4" preload playsinline></video>
 </div>
 
 <!----- TOP BAR ----->
@@ -238,6 +238,12 @@
                             parentId: ".video-block",
                             source: "./assets/videos/ColourFit_LongVideo_V3.mp4",
                             poster: "./assets/images/videoPoster.jpg",
+                            playback: {
+                                preload: "none",
+                                disableContextMenu: true,
+                                controls: false,
+                                playInline: true
+                            }
                         });
                     </script>
                 </div>
